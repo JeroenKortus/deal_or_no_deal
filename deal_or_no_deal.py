@@ -36,10 +36,10 @@ class game:
 		for pick in range(self.round_cases_to_open[self.round]):
 			while True:
 				chosen_nr = inputNumber()
-				if self.cases[chosen_nr].opened == true:
+				if self.cases[chosen_nr].opened == True:
 					print("Case has already been opened.")
 					continue
-				self.cases[chosen_nr].opened = true
+				self.cases[chosen_nr].opened = True
 				print("Case #{} had a value of {}".format(chosen_nr, self.cases[chosen_nr]))
 				break
 
